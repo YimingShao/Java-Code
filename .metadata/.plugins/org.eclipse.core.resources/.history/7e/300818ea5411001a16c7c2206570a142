@@ -1,0 +1,9 @@
+package DP_learning;
+
+
+public class Company {
+	String name;
+	int start;
+	int end;
+	
+}

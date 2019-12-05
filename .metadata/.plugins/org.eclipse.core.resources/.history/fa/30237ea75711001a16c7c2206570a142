@@ -1,0 +1,48 @@
+package DP_learning;
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Max_intervew {
+	
+	public static int max_interview(ArrayList<Company>ary) {
+		int n = ary.size();
+		int ans[] = new int[n];
+		for (int i=0; i<n; i++) {
+			if(i==0) {
+				ans[i]=ary.get(i).score;
+			}
+		}
+		return ans[0];
+	} 
+
+
+	public static void main(String[] args) {
+		ArrayList<Company> companies= new ArrayList<Company>();
+		companies.add(new Company("A",0,1,1));
+		companies.add(new Company("B",0,1,3));
+		companies.add(new Company("C",1,2,2));
+		companies.add(new Company("D",1,2,4));
+		companies.add(new Company("E",1,4,5));
+		
+		System.out.println(max_interview(companies));
+	}
+
+}
+
+
+class Company{
+	String name;
+	int start;
+	int end;
+	int score;
+	
+	public Company(String n, int s, int e, int x) {
+		this.name=n;
+		this.start=s;
+		this.end=e;
+		this.score=x;
+	}
+	
+}

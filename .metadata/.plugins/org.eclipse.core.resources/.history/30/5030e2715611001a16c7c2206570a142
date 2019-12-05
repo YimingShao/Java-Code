@@ -1,0 +1,30 @@
+package DP_learning;
+
+
+import java.util.ArrayList;
+
+public class Max_intervew {
+
+
+	public static void main(String[] args) {
+		ArrayList<Company> companies= new ArrayList<Company>();
+		companies.add(new Company("A",0,1,1));
+	}
+
+}
+
+
+class Company{
+	String name;
+	int start;
+	int end;
+	int score;
+	
+	public Company(String n, int s, int e, int s) {
+		this.name=n;
+		this.start=s;
+		this.end=e;
+		this.score=s;
+	}
+	
+}

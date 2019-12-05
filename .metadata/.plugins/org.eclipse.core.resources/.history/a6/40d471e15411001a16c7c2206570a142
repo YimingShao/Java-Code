@@ -1,0 +1,9 @@
+package DP_learning;
+
+import com.sun.org.apache.xml.internal.security.signature.ObjectContainer;
+
+public class Company {
+	String name;
+	int start;
+	int end;
+}
